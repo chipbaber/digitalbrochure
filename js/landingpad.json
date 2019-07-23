@@ -13,10 +13,10 @@
  "pagedesign": "ideation",
  "pagetitle": "Ideation",
  "pagesubtitle": "Alpha Office Ideation",
- "pageimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1202079333_c393771400",
+ "pageimage":"img/alphaoffice/ideation_screenshot.jpg",
  "date":"August 15, 2016",
  "description":"As we begin our Accelerate journey together our first task is to conduct a short Ideation session in person or via the web/phone. Over the course of about an hour we will leverage a tool called the Ideation Value Map to discuss and identify the aspects of Development Operations that would be of most interest for your organization. There is no need to prep for this session, our tool is designed to guide you and your Ideator through the process and output a custom engagement plan report for you to review.",
- "launchlink":"https://apex.oraclecorp.com/pls/apex/f?p=16736:1:263310530312:::::",
+ "launchlink":"#",
  "launchlinktext": "Launch IVM"
 },
 {
