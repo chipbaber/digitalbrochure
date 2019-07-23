@@ -1,0 +1,41 @@
+{
+"id": "1",
+"pages" : [
+{
+ "pagedesign": "instruction"
+},
+{
+ "pagedesign": "intro",
+ "customername": "AGFA Healthcare",
+ "subtitle":"Audit Repository System Cloud Exploration"
+},
+{
+ "pagedesign": "leadership",
+ "pagetitle":"",
+ "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1216357177_Z395637262",
+ "leadertext":"<strong>Alejandro,</strong><br><br>It was a pleasure meeting you at Oracle Code, and speaking yesterday on your vision for the Audit Repository System.  I feel our Cloud is positioned well to provide a:<br><br>- A secure offsite facility for audit data. <br>- A means to offload usage on internal systems. <br><br>After our call I we located and assign you an enabler, Dennis Foley. Dennis will be in touch soon to coordinate logistics and setup a time to work with you through our Database Cloud Service Workshop. This workshop will help you see our capabilities in the Cloud, but also open the door to other workshops, technical material and code that could assist your initiatives. This digital brochure will help us document our journey, and dynamically update over time as we work together. ",
+ "leaderlink":"",
+ "leaderlinktext":""
+},
+{
+ "pagedesign": "enabler",
+ "pagetitle": "Enabler",
+ "pagesubtitle": "Meet Your Enabler",
+ "enablerimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1216356380_U395636311",
+ "enablername":"Dennis Foley",
+ "description":"<p>Dennis Foley has been assigned as the enabler for your Accelerate journey. Dennis is a Cloud Solution Specialist with over 15 years experience at Oracle based out of our Denver office. He specializes in Cloud based technology solutions and is focused on helping organizations solve complex problems by leveraging the Oracle Cloud.<br><br>Phone: 253-298-1988</p>",
+ "emailaddress":"dennis.foley@oracle.com"
+},
+{
+"pagedesign" : "enablement",
+"pagetitle" : "Enablement Plan",
+"workshopname" : "Database Cloud Service Workshop",
+"workshoplength":"6 hrs.",
+"description" : "This is a one day workshop that provides a set of hands-on labs which give an overview of Oracle's Database Cloud Service. Attendees will begin the day by creating and managing a DBCS instance. Once created attendees will migrate information from a simulated on-premise database into the Cloud using Pluggable Databases, Data Pump and SQL Carts. The class concludes with the setup and deployment of a mobile application using REST services inside Oracle APEX. ",
+"workshopimage" : "https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1205600113_w394124221",
+"launchlink" : "https://launch.oracle.com/?dbcs",
+"launchlinktext" : "View Interactive Lab Guide"
+}
+]
+
+}
