@@ -86,7 +86,7 @@
  "workshopname":"Cloud Native Micro-Services Workshop",
  "workshoplength":"4 hours",
  "description":"This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several Microservices. You will take on 3 Personas during the workshop. Our project manager persona will create the projects adding task and features to be worked on and assign them to developers. The Project Manager will then start the initial sprint. The Java Developer persona will develop a new twitter feed service that will allow for retrieval and filtering of twitter data. The JavaScript Developer persona will develop a new Twitter Marketing UI that will display the twitter data to allow for analysis. During the workshop you will get exposure with Oracle Developer Cloud Service and Oracle Application Container Cloud Service.",
- "workshopimage":"img/alphaoffice/",
+ "workshopimage":"img/alphaoffice/twitter_feed.jpg",
  "isVideo":"true",
  "launchlink":"sample.mp4",
  "launchlinktext": "Watch Preview"
@@ -97,23 +97,23 @@
  "workshopname":"Continuous Integration and Configuration Mgt.",
  "workshoplength":"4 hours",
  "description":"This workshop will walk you through building an automated Software Development Lifecycle (SDLC) pipeline using the Oracle cloud and third party tools This new pipeline will compile code, build environments in the cloud, and deploy the code into the new environment. You will assemble this pipeline leveraging Developer Cloud Service, Jenkins, Oracle Cloud Orchestrations, and Chef. You will take on 2 Personas during the workshop. The stack automation engineer will assemble the pipeline and make it available for developers. The developer will leverage the new SDLC stack and check in code leveraging the pipeline. At the end of the workshop you will have deployed a new application in the Oracle cloud as the developer persona leveraging the pipeline to complete all the tasks after the code is checked into source control.",
- "workshopimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1202079565_u393778691",
- "launchlink":"https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF71644B40C909CD0B70093CF6C3FF17C1177E4725F3/folder/FCB378276D6773EEF2FA1964F6C3FF17C1177E4725F3/_SDLCwithDevOpsWorkshop",
+ "workshopimage":"img/alphaoffice/jenkins.jpg",
+ "launchlink":"sample.mp4",
  "launchlinktext": "View Lab Guides"
 },
 {
  "pagedesign": "leadership",
  "pagetitle":"Leadership Presentation",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437547_K393875376",
+ "leaderimage":"img/alphaoffice/AlphaOffice_Leadership.jpg",
  "leadertext":"Over the course of our Accelerate we expressed interest in exploring modern ways of quickly and consistantly managing our deployments. After attending three hands on workshops, we feel our infrastructure deployment platform could be modernized. This presentation highlights one way we could modernize by leveraging Docker, Oracle Compute and the Developer Cloud Service. ",
- "leaderlink":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1202081063_e393784714",
+ "leaderlink":"img/alphaoffice/AlphaOffice_Leadership.pptx",
  "isVideo":"false",
  "leaderlinktext":"Download Presentation"
 },
 {
  "pagedesign": "leadership",
  "pagetitle":"",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437550_K393875693",
+ "leaderimage":"img/alphaoffice/",
  "leadertext":"<strong>Our Idea: Modernize Infrastructure Deployments</strong><br><br>At Alpha Office we often face delays getting the core environments up and running for our developers. With specialized skill sets, corporate policies and in-flight workloads it sometimes takes days for a OS to be installed, added to the network and enabled for use. We feel leveraging Docker/Oracle Cloud approach could enable re-usable configurations that would speed up IT delivery and enable more consistant operations. Our idea to modernize infrastructure deployments begins with the ability for our OS Developers to properly install the Linux OS as a capability for the container.",
  "leaderlink":"",
  "leaderlinktext":""
@@ -121,7 +121,7 @@
 {
  "pagedesign": "leadership",
  "pagetitle":"",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437553_K393876010",
+ "leaderimage":"img/alphaoffice/",
  "leadertext":"Once our OS capability is completed, our DBA's would create a capability with our corporate standards in place for the 12c database.",
  "leaderlink":"",
  "leaderlinktext":""
@@ -129,7 +129,7 @@
 {
  "pagedesign": "leadership",
  "pagetitle":"",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437556_K393876327",
+ "leaderimage":"img/alphaoffice/",
  "leadertext":"Last but not least our WebLogic Admin could build a capability for the container to run WLS 12c.",
  "leaderlink":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437556_K393876327",
  "leaderlinktext":""
@@ -137,7 +137,7 @@
 {
  "pagedesign": "leadership",
  "pagetitle":"",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437559_K393876644",
+ "leaderimage":"img/alphaoffice/",
  "leadertext":"The beauty of this architecture is that all our capabilities can be created in a manner that both adheres to IT standards but also enables our developers to quickly choose the combination of capabilities they need for a specific project. Our developers can quickly build a Docker container with the specific features they need and run the container locally on in-house servers if there is capacity or more likely push the container to the Oracle Cloud. With the Cloud we feel our developers could have a working personalized environment up and running in an about an hour. Once then environment is running they will have the flexibility to immediately develop or quickly delete and re-build the containers from scratch as and when needed for Q/A and test environments.",
  "leaderlink":"",
  "leaderlinktext":""
@@ -145,7 +145,7 @@
 {
  "pagedesign": "leadership",
  "pagetitle":"Lessons Learned",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437562_K393876961",
+ "leaderimage":"img/alphaoffice/",
  "leadertext":"We learned four lessons during our Accelerate journey. First, this architecture is highly repeatable. It really provides a nice way for use to create consistant containers based on our IT standards. Second, deployment of environments is much easier than our current process, especially if we are able to leverage the cloud and the existing management interfaces. Third, is the ability to recover from errors. No one is perfect in development, and sometime small mistakes have costs days or weeks of troubleshooting. With Oracle we could simply delete and rebuilt the container knowing all the standards are in place. Last but not least is networking, if we implement this idea, we will need to coordinate with the networking team and possibile open/secure communication ports to the cloud.",
  "leaderlink":"",
  "leaderlinktext":""
@@ -153,7 +153,7 @@
 {
  "pagedesign": "leadership",
  "pagetitle":"Moving Forward",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437568_K393877595",
+ "leaderimage":"img/alphaoffice/",
  "leadertext":"After completing our Accelerate we would reccomend four next steps to continue learning and pursue your idea.",
  "leaderlink":"",
  "leaderlinktext":""
@@ -161,7 +161,7 @@
 {
  "pagedesign": "leadership",
  "pagetitle":"Business Value",
- "leaderimage":"https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1203437571_K393877912",
+ "leaderimage":"img/alphaoffice/",
  "leadertext":"By implementing your idea in the Cloud, we feel you will improve your quality of service, increase agility, innovate faster and reduce costs.",
  "leaderlink":"",
  "leaderlinktext":""
