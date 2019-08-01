@@ -1,10 +1,10 @@
 /*function log sends actions from the webpage back to the server.*/
 
-devmode=false;
- 
+devmode=true;
+
 function log(operation,machine) {
 
-var p_url="https://isdportal.oracle.com/pls/portal/tsr_admin.CUSTOMIZE.sf_audit_click?p_code=C_CLICK&p_id1=";
+var p_url="add url to push log";
 var params = p_url+machine+"&p_id2=&p_user_layout="+operation;
 
 if (devmode){
@@ -22,6 +22,3 @@ http.send(null);
 }
 
 }
-
-
-
