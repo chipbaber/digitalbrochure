@@ -17,7 +17,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
-/*Read the .json control file json id reads a parameter to get the json control file*/
+/*Read the dynamic .json control file json id reads a parameter to get the json control file*/
 var jsonId = 'https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id='+getUrlParameter('jsonId');
 
 //the pin serves as a redirect in case the generic launchpad does not have an authenticated user.
@@ -35,12 +35,12 @@ $.getJSON('js/landingpad.json', function (data) {
         if (pages>=1) {
           if(isMobile) {
            buildpage(0);
-           current_page=0; 
+           current_page=0;
           }
           else {
             buildpage(0);
             buildpage(1);
-            current_page=1;   
+            current_page=1;
           }
         }
          //background load images
@@ -50,7 +50,7 @@ $.getJSON('js/landingpad.json', function (data) {
         catch(err){
             log('Error building core HTML from JSON.',err.message);
         }
-}).error(function() { 
+}).error(function() {
 //Error function is in place if the user has not authenticated.
 console.log("Can not retrieve json control file redirecting for authenitcation to https://launch.oracle.com/?"+ pin);
  $(".section").append("<h1 class=\"loadingmessage\">Authorizization Token not found.<br><br>Please go to:<br><a class=\"authmessagelink\" href=\"https://launch.oracle.com/?"+pin+"\">https://launch.oracle.com/?"+pin+"</a><br> to authenticate and access content.</h1>");
@@ -79,19 +79,19 @@ try {
                 }
                else  if (content.pagedesign.toLowerCase() === "enabling technologies") {
                     $(".section").append(buildEnablingTechnologies(index,content)).fadeIn(600);
-                }               
+                }
                else  if (content.pagedesign.toLowerCase() === "enablement") {
                     $(".section").append(buildEnablement(index,content)).fadeIn(600);
-                } 
+                }
                else  if (content.pagedesign.toLowerCase() === "leadership") {
                     $(".section").append(buildLeadership(index,content)).fadeIn(600);
-                } 
+                }
                 else if (content.pagedesign.toLowerCase() === "quotes") {
                     $(".section").append(buildQuotes(index,content)).fadeIn(600);
                 }
                 else if (content.pagedesign.toLowerCase() === "blank") {
                     $(".section").append(buildBlank(index)).fadeIn(600);
-                }                
+                }
                 else {
                // console.log("Add Blank page found at page number: "+index);
                 $(".section").append(buildBlank(index)).fadeIn(600);
@@ -276,8 +276,8 @@ var holder= '<div class="'+getPosition(i)+' mob_page '+getArticleBackground(i)+'
        '</div><div class="watch bold link textright">'+
        '<a href="#" class="morelink" video-title="'+content.technologytitle+'" video-src="'+content.videolink+'" video-ref="'+content.videoreference+'">'+
        '<img src="img/icon_launch.png" class="launch_icon" alt="watch" align="middle"/>Watch</a>'+
-       '</div></div>'; 
-       
+       '</div></div>';
+
        if (!content.technologytitle2 || !content.technologytitle2.length){}
        else {
      var holder= holder+ '<div class="content_description_technology_row" id="subpage22">'+
@@ -473,7 +473,7 @@ document.addEventListener("keyup", function(e) {
             moveforward();
            }
         }
-        
+
         //if left arrow pressed
         if (e.keyCode == 37) {
           if (current_page>1) {
@@ -481,7 +481,7 @@ document.addEventListener("keyup", function(e) {
             moveback();
           }
         }
-        
+
         //letter i pressed
         if (e.keyCode == 73) {
            if ($('.launch_ivm').is(":visible")) {
@@ -493,7 +493,7 @@ document.addEventListener("keyup", function(e) {
             $('.launch_ivm').show();
            }
         }
-        
+
 }, false);
 
 /*Swipe Commands for mobile*/
@@ -509,7 +509,7 @@ log('right Swipe Action','');
         if (current_page>1) {
             log('Left Arrow Pressed','');
             moveback();
-        }            
+        }
 });
 
 //log Enabler email launch opening
@@ -588,13 +588,13 @@ before--;
 var after = i;
 after++;
 
-if(holder.pages[before].pagedesign.toLowerCase() === "leadership") { 
+if(holder.pages[before].pagedesign.toLowerCase() === "leadership") {
 $(".launchpreviousleadership").show();
 $(".launchpreviousleadership").attr("page-num",before);
 }
 else {$(".launchpreviousleadership").hide();}
 
-if(holder.pages[after].pagedesign.toLowerCase() === "leadership") { 
+if(holder.pages[after].pagedesign.toLowerCase() === "leadership") {
 $(".launchnextleadership").show();
 $(".launchnextleadership").attr("page-num",after);
 }
@@ -610,7 +610,7 @@ catch(err){
 
 /*On Click show the video*/
  var _video = document.getElementById("playvideo");
- var src='empty'; 
+ var src='empty';
  var isVideoShowing =false;
 
 /*Code to Dynamically play video*/
@@ -666,25 +666,25 @@ function preload(){
                 else  if (page.pagedesign.toLowerCase() === "ideation results") {
                   appendPreload(page.ideationimg);
                   appendPreload(page.ideationimg_small);
-                }                
+                }
                else  if (page.pagedesign.toLowerCase() === "enabling technologies") {
                    appendPreload(page.technologyimage);
                    appendPreload(page.technologyimage2);
-                }               
+                }
                else  if (page.pagedesign.toLowerCase() === "enablement") {
                    appendPreload(page.workshopimage);
-                } 
-                
+                }
+
                else  if (page.pagedesign.toLowerCase() === "leadership") {
                      appendPreload(page.leaderimage);
-                }            
+                }
                 else {    }
              });
         }
         catch(err){
             log('Error preloading background images in preload().',err.message);
         }
-             
+
 }
 
 function appendPreload(i){ $("#hidden_preload").append('<img src="'+i+'">'); }
@@ -700,4 +700,3 @@ if (screen.width<767) {
 //Capture browser dimensions
 log('Browser Dimensions: ', '  Width: '+$(window).width()+ '  Height: '+$(window).height());
 });
-
